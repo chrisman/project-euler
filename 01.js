@@ -4,7 +4,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
-var arr = (function builder(a, i){
+module.exports = (function builder(a, i){
 	if (i === 0) return a
 	a.unshift(i)
 	return builder(a, i - 1)
